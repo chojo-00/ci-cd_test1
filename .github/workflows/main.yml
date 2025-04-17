@@ -1,0 +1,14 @@
+name: First #Define Workflow name
+on: workflow_dispatch # Define events
+jobs:
+  first-job: # job name, up to you
+    runs-on: ubuntu-latest # key name, setting environment            
+    steps: # Describe Steps                 # 잡 내에서 실행시킬 명령어임.
+      - name: Print greeting                  
+        run: echo "Hello World!"            # 
+      - name: Multiple Lines
+        run: |
+          echo "Line1"
+          echo "Line2"
+      - name: Print goodbye
+        run: echo "Goodbye!"
